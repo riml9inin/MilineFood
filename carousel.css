@@ -1,0 +1,44 @@
+#polosa img {
+    display: block;
+    min-width: 250px;
+    max-width: 482px;
+    width: 25vw;
+}
+#slider {
+    min-width: 750px;
+    max-width: 1446px;
+    width: calc(25vw * 3);
+    overflow: hidden;
+}
+#polosa {
+    min-width: 2000px;
+    max-width: 3866px;
+    width: calc(25vw * 8);
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+#polosa .col {
+    padding: 0;
+    float: left;
+}
+#polosa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 860px) {
+    #slider {
+        min-width: 500px;
+        max-width: 964px;
+        width: calc(25vw * 2);
+    }
+    @media screen and (max-width: 600px) {
+        #slider {
+            min-width: 250px;
+            max-width: 482px;
+            width: 25vw;
+        }
+    }
+}
+

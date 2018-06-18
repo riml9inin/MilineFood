@@ -12,12 +12,21 @@
   background-color: lightgray;
   border-radius: 10px;
 }
-.carousel-control-prev-icon {
-  margin: 0;
+
+.backCor {
+  background: url(pictures/bg-main/bg-1.jpg) no-repeat left center;
+  background-size: cover; 
 }
+
+.modal-body img {
+  height: 100%;
+}
+
 
 .log {
   width: 9vw;
+  padding: 20px 0;
+  min-width: 80px;
 }
 .logText {
   width: 90%;
@@ -67,7 +76,9 @@ h2 {
   color: #4f4f4f;
   padding: 10px 0;
 }
-.contacts, .assortment, .partner {
+.contacts, .assortment, 
+.partner, .partnership,
+.clients {
   padding: 3% 50px;
 }
 
@@ -131,10 +142,19 @@ iframe {
   height: 500px;
   border: 2px solid #66cc00;
 }
-.img {
-  height: 400px;
-  width: 400px;
+
+.card-img-top {
+  max-width: 500px;
 }
+
+.arrow, .arrowMain {
+  min-width: 25px;
+  max-width: 80px;
+}
+.carul {
+  min-width: 100px;
+}
+
 
 input {
   padding: 5px 0;
@@ -151,47 +171,63 @@ input[type="button"]:active {
   color: white;
   cursor: pointer;
 }
-@media screen and (max-width: 1000px) {
-  .navText {
-    padding: 5px 0; 
-    margin: 0;
-    font-size: 18px;
-  }
-  .navText:active, .navText:hover {
-    background-color: #66cc00;
-    font-size: 18px;
-    border: 1px solid white;
-    color: white;  
-  }
+
+.navbar-toggler {
+  border: none;
 }
 
-@media screen and (max-width: 800px) {
-  .log {
-    padding: 20px 0;
-    width: 100px;
-  }
-  .logText {
-    width: 90%;
-    font-size: 16px;
-    line-height: 1.2em;
-    padding: 5px 0;
-  }
-  .contacts {
-    padding-top: 10%;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  .contacts, .assortment, .partner {
-    padding: 40px 5%;
-  }
+#modalImg {
+  max-width: 482px;
+  width: 100%;
+}
 
-  iframe {
-    width: 100%;
-    height: 300px;
-    border: 2px solid #66cc00;
+@media screen and (max-width: 1199px) {
+  .arrowMain {
+    transform: rotate(90deg);
+  }
+  @media screen and (max-width: 1000px) {
+    .navText {
+      padding: 5px 0; 
+      margin: 0;
+      font-size: 14px;
+    }
+    .navText:active, .navText:hover {
+      background-color: #66cc00;
+      font-size: 14px;
+      border: 1px solid white;
+      color: white;  
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .logText {
+      width: 90%;
+      font-size: 16px;
+      line-height: 1.2em;
+      padding: 5px 0;
+    }
+    .contacts {
+      padding-top: 10%;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    .contacts, .assortment, 
+    .partner, .partnership,
+    .clients { 
+      padding: 40px 5%;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 2px solid #66cc00;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .arrow {
+      transform: rotate(90deg);
+    }
   }
 }
