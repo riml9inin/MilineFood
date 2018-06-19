@@ -1,3 +1,6 @@
+body {
+  min-width: 320px;
+}
 .carousel-indicators {
   bottom: -60px;
 }
@@ -12,31 +15,24 @@
   background-color: lightgray;
   border-radius: 10px;
 }
-
-.backCor {
+.backMain {
   background: url(pictures/bg-main/bg-1.jpg) no-repeat left center;
   background-size: cover; 
 }
-
 .modal-body img {
   height: 100%;
 }
-
-
 .log {
   width: 9vw;
   padding: 20px 0;
   min-width: 80px;
 }
-.logText {
-  width: 90%;
-  font-size: 1.2vw;
-  line-height: 1em;
-  padding: 10% 0;
-}
-
 .numberText {
-  font-size: 1.7vw;
+  font-size: 1.3vw;
+  line-height: 1em;
+}
+.numberContacts {
+ color: #66cc00;
 }
 
 a, a:hover {
@@ -154,8 +150,20 @@ iframe {
 .carul {
   min-width: 100px;
 }
-
-
+.card-body {
+  padding: 20px 0;
+}
+.card-text {
+  line-height: 1.6;
+}
+.knowInfoButton {
+  font-size: 15px ;
+  padding: 4px;
+  background-color: #66cc00;
+}
+.knowInfoButton:hover {
+  color: white;
+}
 input {
   padding: 5px 0;
   margin-bottom: 10px;
@@ -183,13 +191,23 @@ input[type="button"]:active {
 
 @media screen and (max-width: 1199px) {
   .arrowMain {
-    transform: rotate(90deg);
+    transform: rotate(130deg);
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
   }
   @media screen and (max-width: 1000px) {
     .navText {
       padding: 5px 0; 
       margin: 0;
-      font-size: 14px;
+      font-size: 13.5px;
+    }
+    .numberText {
+      font-size: 13px;
+      line-height: 1em;
     }
     .navText:active, .navText:hover {
       background-color: #66cc00;
@@ -197,37 +215,54 @@ input[type="button"]:active {
       border: 1px solid white;
       color: white;  
     }
+    @media screen and (max-width: 991px) {
+      .numberText {
+        position: inherit;
+        font-size: 16px;
+        line-height: 1em;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      .textMiline {
+        font-size: 32px;
+        color: #66cc00;
+      }
+      @media screen and (max-width: 800px) {
+        .contacts {
+          padding-top: 10%;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        .contacts, .assortment, 
+        .partner, .partnership,
+        .clients { 
+          padding: 40px 5%;
+        }
+        .arrowMain {
+          transform: rotate(130deg);
+          max-width: 10vw;;
+        }
+        iframe {
+          width: 100%;
+          height: 300px;
+          border: 2px solid #66cc00;
+        }
+        @media screen and (max-width: 575px) {
+          .arrow, .arrowMain {
+            transform: rotate(90deg);
+            min-width: 25px;
+            max-width: 80px;
+          }
+        }
+      }
+    }
+    
   }
-  @media screen and (max-width: 800px) {
-    .logText {
-      width: 90%;
-      font-size: 16px;
-      line-height: 1.2em;
-      padding: 5px 0;
-    }
-    .contacts {
-      padding-top: 10%;
-    }
-    h2 {
-      font-size: 24px;
-    }
-    h3 {
-      font-size: 18px;
-    }
-    .contacts, .assortment, 
-    .partner, .partnership,
-    .clients { 
-      padding: 40px 5%;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 2px solid #66cc00;
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .arrow {
-      transform: rotate(90deg);
-    }
-  }
+  
+  
 }

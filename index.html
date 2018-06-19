@@ -13,51 +13,42 @@
     
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="style.css">
-    
-   
-    
 
-    <title></title>
+    <title>Milanfood</title>
   </head>
   
   <body>
     <div class="container-fluid">
       <div class="row">
-                 
+
         <header class="col-12 navbar-expand-lg navbar-light">
           <div class="container-fluid"> 
             <div class="row d-flex align-items-center">
 
-              <div class="col col-lg-2 p-lg-0" href="#">
+              <div class="col-3 col-lg-2 p-lg-0">
                 <img class="log" src="log.png" alt="log">
               </div>
-              
-          <!--
-              <div class="text-center logText numberText">
-               +375 (29) 107 02 55<br>
-               8 017 222 46 46</div>
-              </div> 
-          -->
-              
-              <button class="navbar-toggler col-2 col-lg-1" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-              <div class="container-fluid col-lg-10">
-                <div class="row collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="col-lg-2 text-center navBox"><a class="navText" href="#">ПРОДУКЦИЯ</a></div>
-                  <div class="col-lg-2 text-center navBox"><a class="navText" href="#">О КОМПАНИИ</a></div>
-                  <div class="col-lg-2 text-center navBox"><a class="navText" href="#">СОТРУДНИЧЕСТВО</a></div>
-                  <div class="col-lg-2 text-center navBox"><a class="navText" href="#">ЛОГИСТИКА</a></div>
-                  <div class="col-lg-2 text-center navBox"><a class="navText" href="#contacts">КОНТАКТЫ</a></div>
-                  <div class="col-lg-2 text-center navBox"><a class="navText" href="#feedBack">ЗАКАЗАТЬ ЗВОНОК</a></div>     
-                </div>            
+              <div class="col col-lg-2 text-center numberText p-0">
+                  <span class="numberContacts">Контакты <br>отдела продаж:</span><br>+375 (29) 107 02 55<br>8 017 222 46 46
               </div>
-                     
-                     
-            </div>
+              
+              <button class="col-2 col-lg-1 navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              
+              <div class="container-fluid col-12 col-lg-8">
+                <div class="row collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="col-lg text-center navBox"><a class="navText" href="#assortment">ПРОДУКЦИЯ</a></div>
+                  <div class="col-lg text-center navBox"><a class="navText" href="#">О КОМПАНИИ</a></div>
+                  <div class="col-lg text-center navBox"><a class="navText" href="#">СОТРУДНИЧЕСТВО</a></div>  
+                  <div class="col-lg text-center navBox"><a class="navText" href="#feedBack">ЗАКАЗАТЬ ЗВОНОК</a></div>
+                  <div class="col-lg text-center navBox"><a class="navText" href="#contacts">КОНТАКТЫ</a></div>     
+                </div> 
+              </div>
+              
           </div>           
         </header> 
 
-        <main class="col-12 backCor" >
+        <main class="col-12 backMain" >
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -86,7 +77,7 @@
 
         </main>
   
-        <div class="assortment col-12">
+        <div id="assortment" class="assortment col-12">
           <h2 class="text-center col-12">АССОРТИМЕНТ <span class="textMiline">MILINEFOOD</span></h2>
 
           <div class="col-12">
@@ -129,13 +120,13 @@
           </div>     
         </div>
         
-        <form class="proba col-12" action="">
+        <form class="proba col-12" action="infoclients.php" method="post">
           <div class="container-fluid">
             <div class="row justify-content-around">
               <div class="col-12 firstHead"><h2>ПОЛУЧИТЕ КОРОБКУ MILINEFOOD НА ДЕГУСТАЦИЮ БЕСПЛАТНО!</h2></div>
               <div class="col-12"><h2>В КОРОБКЕ 5 ПАЧЕК САЛАТОВ MILINEFOOD*</h2></div> 
-              <input class="col-sm-6 col-md-6 col-lg-2" type="text" value="" placeholder="Введите имя">
-              <input class="col-sm-6 col-md-6 col-lg-2" type="text" placeholder="Введите номер телефона">
+              <input class="col-sm-6 col-md-6 col-lg-2" type="text" value="" placeholder="Введите имя" required>
+              <input class="col-sm-6 col-md-6 col-lg-2" type="text" placeholder="Введите номер телефона" required>
               <input class="col-lg-3" type="button" value="ПОЛУЧИТЬ 5 ПАЧЕК БЕСПЛАТНО">
             </div>
           </div>
@@ -216,7 +207,7 @@
           </div>
         </div>
         
-        <div class="partnership col-12">
+        <div id="partnership" class="partnership col-12">
           <div class="container-fluid">
             <div class="row d-flex justify-content-center">
               <h2 class="col-12 text-center  pb-4">ЧТО НУЖНО ЧТОБЫ СТАТЬ ПАРТНЕРОМ?</h2>
@@ -241,8 +232,8 @@
                   <div class="card-text text-center">
                     <span><b>ПОЗВОНИТЬ НАМ</b></span><br>
                     <span class="greenText"><b>8 017 222 46 46</b></span><br>
-                    <span><b>или заказать</b></span>
-                    <a class="knowInfoButton" href="#">ОБРАТНЫЙ ЗВОНОК</a>
+                    <span><b>или заказать</b></span><br>
+                    <span><a class="knowInfoButton" href="#feedBack">ОБРАТНЫЙ ЗВОНОК</a></span>
                   </div>
                 </div>
               </div>
@@ -306,7 +297,7 @@
           </div>
         </div>
         
-        <form id="feedBack" class="feedBack col-12" action="">
+        <form id="feedBack" class="feedBack col-12" action="infoclients.php" method="post">
           <div class="container-fluid">
             <div class="row justify-content-around">
               <div class="col-12 secondHead"><h2>ОСТАЛИСЬ ВОПРОСЫ? ОСТАВЬ СВОЙ НОМЕР ТEЛЕФОНА</h2></div>
@@ -360,6 +351,7 @@
             </div>
           </div>
         </footer>
+
       </div>
     </div>
     
